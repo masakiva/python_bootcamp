@@ -1,5 +1,5 @@
 import string
-import re
+# import re
 
 
 def text_analyzer(text=""):
