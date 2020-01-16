@@ -30,7 +30,7 @@ while n <= 10:
         else:
             if n == 1:
                 print("hmm, soothsayer? or some kind of luck?")
-            elif ans = 42:
+            elif ans == 42:
                 print("Yeaaaaaaah")
             else:
                 print("Congrats, you've got it!")

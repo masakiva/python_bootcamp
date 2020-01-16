@@ -9,3 +9,7 @@ for key, val in languages.items():
 
 # for item in languages:
 #     print("%s was created by %s" % (item, languages[item]))
+
+# print("""Python was created by {Python}
+# Ruby was created by {Ruby}
+# PHP was created by {PHP}""".format(**languages)) 

@@ -3,7 +3,7 @@ import sys
 j = len(sys.argv) - 1
 if j == 0:
     sys.exit()
-result = ""
+result = ''
 while j > 0:
     for i in reversed(sys.argv[j]):
         if i.isupper():
@@ -14,7 +14,7 @@ while j > 0:
             result += i
     j -= 1
     if j > 0:
-        result += " "
+        result += ' '
 print(result)
 
 # i = len(sys.argv) - 1

@@ -89,5 +89,4 @@ while choice != "5":
     elif choice != "5":
         print("This option does not exist, please type the corresponding number.")
         print("To exit, enter 5.")
-print("Cookbook closed.")
-sys.exit()
+sys.exit("Cookbook closed.")

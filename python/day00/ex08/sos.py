@@ -15,8 +15,7 @@ MORSE_CODE_DICT = {'A': '.-', 'B': '-...',
                    '0': '-----'}
 
 del sys.argv[0]
-text = ' '
-text = (text.join(sys.argv)).upper()
+text = (' '.join(sys.argv)).upper()
 
 morsetext = ''
 for c in text:
@@ -25,7 +24,6 @@ for c in text:
     elif c == ' ':
         morsetext += '/'
     else:
-        print("ERROR")
-        sys.exit()
+        sys.exit("ERROR")
     morsetext += ' '
 print(morsetext[:-1])

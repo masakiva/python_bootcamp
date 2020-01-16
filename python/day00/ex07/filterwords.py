@@ -14,9 +14,9 @@ try:
     n = int(sys.argv[2])
 except ValueError:
     errorexit()
-n += 1
-regex = "[a-zA-Z]{" + str(n) + ",}"
-words = []
-for word in re.findall(regex, sys.argv[1]):
-    words.append(word)
-print(words)
+ret = [w for w in re.findall("[a-zA-Z]+", sys.argv[1]) if len(w) > n]
+print(ret)
+
+
+# regex = "[a-zA-Z]{" + str(n + 1) + ",}"
+# print(re.findall(regex, sys.argv[1]))
