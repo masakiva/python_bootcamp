@@ -21,8 +21,8 @@ without any for-loop. The three arrays must have compatible dimensions.
         return None
     if type(theta) is not np.ndarray or theta.ndim != 1:
         return None
-    xi, xj = x.shape
-    if xi != y.size or xj != theta.size:
+    m, n = x.shape
+    if m != y.size or n != theta.size:
         return None
     diff = x.dot(theta) - y
     xmean = (diff.T).dot(diff)

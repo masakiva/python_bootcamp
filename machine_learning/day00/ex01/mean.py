@@ -22,7 +22,7 @@ vector.
     return xsum
 
 
-def mean(x):
+def mean(x, f):
     """Computes the mean of a non-empty numpy.ndarray, using a for-loop.
     Args:
      x: has to be an numpy.ndarray, a vector.
@@ -34,8 +34,8 @@ def mean(x):
     """
     if type(x) is not np.ndarray or x.ndim != 1 or x.size == 0:
         return None
-    return sum_(x, lambda x: x) / len(x)
+    return sum_(x, f) / x.size
 
 
 X = np.array([0, 15, -9, 7, 12, 3, -21])
-print(mean(X ** 2))
+print(mean(X, lambda x: x ** 2))

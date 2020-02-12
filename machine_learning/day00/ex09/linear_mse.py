@@ -21,11 +21,11 @@ using a for-loop. The three arrays must have compatible dimensions.
         return None
     if type(theta) is not np.ndarray or theta.ndim != 1:
         return None
-    xi, xj = x.shape
-    if xi != y.size or xj != theta.size:
+    m, n = x.shape
+    if m != y.size or n != theta.size:
         return None
     xmean = 0.0
-    for i in range(y.size):
+    for i in range(m):
         xmean += (theta.dot(x[i]) - y[i]) ** 2
     return xmean / y.size
 
@@ -42,4 +42,3 @@ Z = np.array([3,0.5,-6])
 print(linear_mse(X, Y, Z))
 W = np.array([0,0,0])
 print(linear_mse(X, Y, W))
-

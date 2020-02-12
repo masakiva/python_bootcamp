@@ -33,3 +33,9 @@ def generator(text, sep=' ', option=None):
 
 for word in generator("Le Lorem Ipsum est simplement du faux texte. du", option='random'):
     print(word)
+
+word = generator("Le Lorem Ipsum est simplement du faux texte. du", option='ordered')
+word2 = generator("Le Lorem Ipsum est simplement du faux texte. du", option='unique')
+print(next(word))
+print(next(word))
+print(next(word2))

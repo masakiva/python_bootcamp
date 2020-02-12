@@ -4,9 +4,8 @@ def what_are_the_vars(*args, **kwargs):
         setattr(obj, "var_" + str(i), val)
     for key, val in kwargs.items():
         if key in dir(obj):
-            return
-        else:
-            setattr(obj, key, val)
+            return None
+        setattr(obj, key, val)
     return obj
 
 class ObjectC(object):

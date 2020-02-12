@@ -20,6 +20,7 @@ without any for loop. The two arrays must have the same dimensions.
         return None
     diff = y_hat - y
     xmean = diff.dot(diff)
+    #xmean = sum(diff ** 2)
     return xmean / y.size
 
 X = np.array([0, 15, -9, 7, 12, 3, -21])
