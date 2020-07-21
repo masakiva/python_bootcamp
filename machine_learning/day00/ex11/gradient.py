@@ -33,6 +33,8 @@ a for-loop. The two arrays must have the compatible dimensions.
         for i in range(m):
             nabla[j] += (theta.dot(x[i]) - y[i]) * x[i][j]
         nabla[j] /= m
+    #for j in range(n):
+    #   nabla[j] = sum((x.dot(theta) - y) * (x[:,j])) / m
     return nabla
 
 X = np.array([
